@@ -4,6 +4,7 @@ public class SDA {
     int[] arr = null;
     public SDA(int Size){
         arr = new int[Size];
+        System.out.println("1D Array Created Successfully");
     }
 
     public void Insert(int location, int value) {
@@ -38,4 +39,10 @@ public class SDA {
 
         }
     }
+
+    public void delete(int location){
+        arr[location] = 0;
+        System.out.println("Delete Successfully");
+    }
+
 }

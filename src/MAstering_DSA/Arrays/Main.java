@@ -8,10 +8,14 @@ public class Main {
         array.Insert(2, 54);
         array.Insert(20, 554);
         array.Insert(7, 56);
+        array.delete(2);
 
         array.Traverse();
         array.Search(540);
 
         TwoDA Newarray = new TwoDA(10,10);
+        Newarray.insert(0,0,10);
+
+        Newarray.Traverse();
     }
 }
