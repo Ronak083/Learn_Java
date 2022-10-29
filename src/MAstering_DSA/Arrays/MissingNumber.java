@@ -1,5 +1,4 @@
 package MAstering_DSA.Arrays;
-
 public class MissingNumber {
         public static void main(String[] args) {
             int Sum1 = 0;
