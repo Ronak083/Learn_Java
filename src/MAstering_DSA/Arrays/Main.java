@@ -11,5 +11,7 @@ public class Main {
 
         array.Traverse();
         array.Search(540);
+
+        TwoDA Newarray = new TwoDA(10,10);
     }
 }
