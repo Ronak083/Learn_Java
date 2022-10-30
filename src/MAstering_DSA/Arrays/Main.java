@@ -1,21 +1,35 @@
 package MAstering_DSA.Arrays;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        SDA array = new SDA(10);
-        array.Insert(2, 50);
-        array.Insert(4, 540);
-        array.Insert(2, 54);
-        array.Insert(20, 554);
-        array.Insert(7, 56);
-        array.delete(2);
+        SDA array = new SDA(5);
+        Scanner sc = new Scanner(System.in);
+        array.Insert(0,1);
+        array.Insert(1,2);
+        array.Insert(2,3);
+        array.Insert(3,4);
+        array.Insert(4,5);
 
-        array.Traverse();
-        array.Search(540);
+        //array.Traverse();
+        //array.Search(4);
+        //array.MissingNumber();
+        //array.twosum(9);
+        //array.delete(4);
+        array.unique();
+        array.MaxProduct();
 
-        TwoDA Newarray = new TwoDA(10,10);
-        Newarray.insert(0,0,10);
 
-        Newarray.Traverse();
+        //TwoDA Newarray = new TwoDA(3,3);
+        //for(int i =0; i<Newarray.arr.length;i++){
+        //    for(int j =0; j<Newarray.arr[0].length;j++){
+        //        Newarray.insert(i,j, sc.nextInt());
+        //    }
+        //}
+        //Newarray.Traverse();
+        //Newarray.RotateMatrix();
+        //Newarray.Traverse();
+
+
     }
 }
