@@ -1,4 +1,4 @@
-package MAstering_DSA.Arrays;
+package Data_Structures.Arrays;
 public class TwoDA {
     int[][] arr = null;
     public TwoDA(int m, int n){
