@@ -1,4 +1,4 @@
-package MAstering_DSA.Arrays;
+package Data_Structures.Arrays;
 
 public class SDA {
     int[] arr = null;
