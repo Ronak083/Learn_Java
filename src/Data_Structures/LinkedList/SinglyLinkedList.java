@@ -3,7 +3,7 @@ public class SinglyLinkedList {
     public Node head;
     public Node tail;
     public int size;
-    public Node CreateSLL(int value){
+    public Node Create(int value){
         head = new Node();
         Node node = new Node();
         node.next = null;
@@ -12,11 +12,11 @@ public class SinglyLinkedList {
         tail = node;
         return head;
     }
-    public void insertSll(int location, int value){
+    public void insert(int location, int value){
         Node node = new Node();
         node.value = value;
         if (head == null) {
-            CreateSLL(value);
+            Create(value);
             return;
         } else if(location == 0){
             node.next = head;
@@ -38,4 +38,12 @@ public class SinglyLinkedList {
             }
         size++;
     }
+    public void traverse(){
+        Node temp = head;
+        for (int i =0;i<=size;i++){
+            System.out.print(temp.value + "->");
+            temp = temp.next;
+        }
+    }
+
 }
