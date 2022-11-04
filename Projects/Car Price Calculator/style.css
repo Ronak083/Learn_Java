@@ -1,4 +1,42 @@
-body{
+*:before, *:after { content: ''; }
+hr {
+  border: 0;
+  margin: 1.35em auto;
+  max-width: 100%;
+  background-position: 50%;
+  box-sizing: border-box;
+}
+.shine {
+    height: 20px;
+    width: 60%;
+    background-image: radial-gradient(
+      farthest-side at 50% -50%,
+      hsla(0, 0%, 0%, 0.5),
+      hsla(0, 0%, 95%, 0));
+    position: relative; 
+  }
+  
+  .shine::before {
+    height: 1px;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(
+      90deg,
+      hsla(0, 0%, 0%, 0),
+      hsla(0, 0%, 0%, 0.75) 50%,
+      hsla(0, 0%, 0%, 0));
+  }
+  .field-wrap {
+    position:relative;
+    border-radius: 4px;
+    margin-bottom:8px;
+    text-transform: capitalize ;
+    background-color: ;
+  }
+  
+  body{
 text-align: center;
 color: #FFFFFF;
 width:auto;
@@ -6,36 +44,33 @@ height: auto;
 background: #1F2937;
 }
 
-h1{
-    position: absolute;
-    width: 354px;
-    height: 80px;
-    left: 40px;
-    top: 20px;
-    
+h1{   
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 45px;
-    line-height: 40px;
+    line-height: 0px;
     letter-spacing: -0.025em;
     color: #FFFFFF;
     }
     
     h2{
-        position: absolute;
-    width: 354px;
-    height: 80px;
-    left: 40px;
-    top: 55px;
-    
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 40px;
-    line-height: 40px;
+    line-height: 10px;
     letter-spacing: -0.025em;
     color: #4ADF86;
+    }
+    .main{
+    width: auto;
+    top: 500px;
+    left: 40px;
+        }
+    h3{
+        font-size: 32px;
+        color: #4ADF86;
     }
     
     .bg {
@@ -55,5 +90,16 @@ h1{
         flex: none;
         order: 1;
         flex-grow: 0;
+        bottom: 50px;
         }
- 
+
+        #para{
+            position: auto;
+               
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        color: #D5D4D8;
+        }

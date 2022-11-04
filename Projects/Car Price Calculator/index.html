@@ -4,113 +4,123 @@
 <head>
     <meta charset="UTF-8">
     <title>Car-Price Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
 
 <body>
+    <header>
+        <a href="#">Home</a>
+        <a href=""></a>
+    </header>
     <div class="main">
-        <h1 class>Let's Calculate </h1>
-        <h2>old car Price!!</h2>
-        <form method="post" action="php.php">
-            <section>
-                <h3>Onwer Details</h3>
-                <input type="text" name="firstname" placeholder="First Name"><br>
-                <input type="text" name="lastname" placeholder="Last Name"><br>
-                <input type="email" name="email" placeholder="Email"><br>
-                <input type="text" name="mobile" placeholder="Mobile"><br>
-                <input type="text" name="city" placeholder="City"><br><br>
-            </section>
-            <hr>
-            <section>
-                <h3>Car Details</h3>
-                <label for="cars">Choose a car & Model:</label>
-                <br>
-                <select name="cars" id="cars">
-                    <optgroup label="Ford">
-                        <option value="volvo">Eco-Sports</option>
-                        <option value="Endeavour">Endeavour</option>
-                        <option value="Aspire">Aspire</option>
-                    </optgroup>
-                    <optgroup label="Tata">
-                        <option value="mercedes">Nexon</option>
-                        <option value="Punch">Punch</option>
-                        <option value="Altroz">Altroz</option>
-                    </optgroup>
-                </select> <br><br>
-                <label for="ModelY">Model Year</label><br>
-                <select name="Year" id="Menu">
-                    <option value="1999">1999</option>
-                    <option value="2000">2000</option>
-                    <option value="2001">2001</option>
-                    <option value="2002">2002</option>
-                    <option value="2003">2003</option>
-                    <option value="2004">2004</option>
-                    <option value="2005">2005</option>
-                    <option value="2006">2006</option>
-                    <option value="2007">2007</option>
-                    <option value="2008">2008</option>
-                    <option value="2009">2009</option>
-                    <option value="2010">2010</option>
-                    <option value="2011">2011</option>
-                    <option value="2012">2012</option>
-                    <option value="2013">2013</option>
-                    <option value="2014">2014</option>
-                    <option value="2015">2015</option>
-                    <option value="2016">2016</option>
-                    <option value="2017">2017</option>
-                    <option value="2018">2018</option>
-                    <option value="2019">2019</option>
-                    <option value="2020">2020</option>
-                    <option value="2021">2021</option>
-                    <option value="2022">2022</option>
-                </select><br>
-                <br>
-            </section>
-            <hr>
-            <section>
-                <h3>Car Current Information</h3>
-                <label for="MilesD">Miles Driven:</label><br>
-                <input type="number"> <br>
-                <p>Any Accidental history?:</p>
-                  <input type="radio" id="Yes" name="Accidental" value="Yes">
-                  <label for="Yes">Yes</label>
-                  <input type="radio" id="No" name="Accidental" value="No">
-                  <label for="No">No</label><br>
-            </section>
-            <hr>
-            <section>
-                <h3>Additional accessories</h3>
-                <p>Enter the no. of Installed AirBag in your Car:</p>
-                  <input type="radio" id="Yes" name="hasairbag" value="Yes">
-                  <label for="Yes">Yes</label>
-                  <input type="radio" id="No" name="hasairbag" value="No">
-                  <label for="No">No</label><br>
-                <p>Does your car has Abs:</p>
-                  <input type="radio" id="Yes" name="hasAbs" value="Yes">
-                  <label for="Yes">Yes</label>
-                  <input type="radio" id="No" name="hasAbs" value="No">
-                  <label for="No">No</label><br>
-                <p>Does your car has Sunroof:</p>
-                  <input type="radio" id="Yes" name="Sunroof" value="Yes">
-                  <label for="Yes">Yes</label>
-                  <input type="radio" id="No" name="Sunroof" value="No">
-                  <label for="No">No</label><br>
-                <p>Does your car has Rear-View Camera:</p>
-                  <input type="radio" id="Yes" name="RVC" value="Yes">
-                  <label for="Yes">Yes</label>
-                  <input type="radio" id="No" name="RVC" value="No">
-                  <label for="No">No</label><br>
-                <p>Does your car have Auto AC:</p>
-                  <input type="radio" id="Yes" name="AC" value="Yes">
-                  <label for="Yes">Yes</label>
-                  <input type="radio" id="No" name="AC" value="No">
-                  <label for="No">No</label><br>
-            </section>
-            <hr>
-            <button class="bg">Calculate</button>
+        <h1 class>Let's Calculate </h1><h2>old car Price!!</h2><hr class="shine">
+        <section id="main">
+            <form method="post" action="php.php">
+                <section>
+
+                    <h3>Onwer Details</h3>
+                    <input class="field-wrap" type="text" name="firstname" placeholder="First Name"><br>
+                    <input class="field-wrap"  type="text" name="lastname" placeholder="Last Name"><br>
+                    <input class="field-wrap"  type="email" name="email" placeholder="Email"><br>
+                    <input class="field-wrap"  type="text" name="mobile" placeholder="Mobile"><br>
+                    <input  class="field-wrap" type="text" name="city" placeholder="City"><br><br>
+                </section>
+                <hr class="shine">
+                <section>
+                    <h3>Car Details</h3>
+                    <label id="para" for="cars">Choose a car & Model:</label>
+                    <br>
+                    <select   name="cars" id="cars">
+                        <optgroup label="Ford">
+                            <option value="volvo">Eco-Sports</option>
+                            <option value="Endeavour">Endeavour</option>
+                            <option value="Aspire">Aspire</option>
+                        </optgroup>
+                        <optgroup label="Tata">
+                            <option value="mercedes">Nexon</option>
+                            <option value="Punch">Punch</option>
+                            <option value="Altroz">Altroz</option>
+                        </optgroup>
+                    </select> <br><br>
+                    <label id="para" for="ModelY">Model Year</label><br>
+                    <select name="Year" id="Menu">
+                        <option value="1999">1999</option>
+                        <option value="2000">2000</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                    </select><br>
+                    <br>
+                </section>
+                <hr class="shine">
+                <section>
+                    <h3>Car Current Information</h3>
+                    <label id="para" for="MilesD">Miles Driven:</label><br>
+                    <input type="number"> <br>
+                    <p id="para">Any Accidental history?:</p>
+                      <input type="radio" id="Yes" name="Accidental" value="Yes">
+                      <label for="Yes">Yes</label>
+                      <input type="radio" id="No" name="Accidental" value="No">
+                      <label for="No">No</label><br>
+                </section>
+                <hr class="shine">
+                <section>
+                    <h3>Additional accessories</h3>
+                    <p id="para">Enter the no. of Installed AirBag in your Car:</p>
+                      <input type="radio" id="Yes" name="hasairbag" value="Yes">
+                      <label for="Yes">Yes</label>
+                      <input type="radio" id="No" name="hasairbag" value="No">
+                      <label for="No">No</label><br>
+                    <p id="para">Does your car has Abs:</p>
+                      <input type="radio" id="Yes" name="hasAbs" value="Yes">
+                      <label for="Yes">Yes</label>
+                      <input type="radio" id="No" name="hasAbs" value="No">
+                      <label for="No">No</label><br>
+                    <p id="para">Does your car has Sunroof:</p>
+                      <input type="radio" id="Yes" name="Sunroof" value="Yes">
+                      <label for="Yes">Yes</label>
+                      <input type="radio" id="No" name="Sunroof" value="No">
+                      <label for="No">No</label><br>
+                    <p id="para">Does your car has Rear-View Camera:</p>
+                      <input type="radio" id="Yes" name="RVC" value="Yes">
+                      <label for="Yes">Yes</label>
+                      <input type="radio" id="No" name="RVC" value="No">
+                      <label for="No">No</label><br>
+                    <p id="para">Does your car have Auto AC:</p>
+                      <input type="radio" id="Yes" name="AC" value="Yes">
+                      <label for="Yes">Yes</label>
+                      <input type="radio" id="No" name="AC" value="No">
+                      <label for="No">No</label><br>
+                </section>
+        </section>
+        <hr class="shine">
+        <button class="bg">Calculate</button><br>
         </form>
     </div>
     <script src="script.js"></script>
+    <footer>
+        <a href="">Contact</a>
+        <a href="">About Website</a>
+    </footer>
 </body>
-
 </html>
