@@ -1,7 +1,4 @@
-package Data_Structures.LinkedList.SinglyLL;
-
-import Data_Structures.LinkedList.SinglyLL.SinglyLinkedList;
-
+package Data_Structures.LinkedList;
 public class Main {
     public static void main(String[] args) {
       //SinglyLinkedList sll = new SinglyLinkedList();

@@ -1,5 +1,4 @@
-package Data_Structures.LinkedList.SinglyLL;
-
+package Data_Structures.LinkedList;
 public class SinglyLinkedList {
     public Node head;
     public Node tail;
