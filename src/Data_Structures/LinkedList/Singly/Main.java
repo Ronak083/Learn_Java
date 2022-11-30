@@ -1,4 +1,6 @@
-package Data_Structures.LinkedList;
+package Data_Structures.LinkedList.Singly;
+
+import Data_Structures.LinkedList.Singly.SinglyLinkedList;
 
 public class Main {
     public static void main(String[] args) {
