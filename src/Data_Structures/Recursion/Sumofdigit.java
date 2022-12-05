@@ -1,4 +1,4 @@
-package LearnRecursion;
+package Data_Structures.Recursion;
 
 public class Sumofdigit {
     public static void main(String[] args) {

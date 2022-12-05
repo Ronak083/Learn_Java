@@ -1,4 +1,4 @@
-package LearnRecursion;
+package Data_Structures.Recursion;
 
 public class Power {
     public static void main(String[] args) {

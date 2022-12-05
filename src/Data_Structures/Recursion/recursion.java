@@ -1,4 +1,4 @@
-package LearnRecursion;
+package Data_Structures.Recursion;
 import com.sun.tools.javac.Main;
 
 public class recursion {
