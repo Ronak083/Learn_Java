@@ -46,5 +46,8 @@ public class SinglyLinkedList {
             temp = temp.next;
         }
     }
+    public void Delete(int location){
+
+    }
 
 }
