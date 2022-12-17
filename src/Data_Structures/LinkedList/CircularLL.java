@@ -40,5 +40,8 @@ public class CircularLL {
     }
     public void search(int value){}
     public void delete(int location){}
-    public void deleteCll(){}
+    public void deleteCll(
+    head = null;
+    tail = null;
+    ){}
 }
