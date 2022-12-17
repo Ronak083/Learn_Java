@@ -14,12 +14,13 @@ public class SinglyLinkedList {
         return head;
     }
     public void insert(int location, int value){
-        Node node = new Node();
-        node.value = value;
         if (head == null) {
             CreateSll(value);
             return;
-        } else if(location == 0){
+        }
+        Node node = new Node();
+        node.value = value;
+        if(location == 0){
             node.next = head;
             head = node;
         } else if (location >= size) {
@@ -64,17 +65,18 @@ public class SinglyLinkedList {
             Node temp = head;
             for (int i =0 ; i<size;i++){
                 if (temp.value == value){
-                    System.out.println("\n Value found");
+                    System.out.println("Value found\n");
                     return true;
-                }
+                }temp = temp.next;
+
             }
         }
-        System.out.println("Node not found");
+        System.out.println("Node not found\n");
         return false;
     }
     public void Delete(int location){
         if (head == null){
-            System.out.println("No Linked list Exist");
+            System.out.println("No Linked list Exist\n");
             return;
         } else if (location == 0) {
               head = head.next;
@@ -108,8 +110,8 @@ public class SinglyLinkedList {
 
     public void DeleteSll(){
         head = null;
-        tail= null;
-        System.out.println("List deleted successfully");
+        tail = null;
+        System.out.println("List deleted successfully\n");
     }
 
 
