@@ -21,18 +21,18 @@ public class Main {
       //sll.Delete(2);
       //sll.traverse();
 
-      CircularLL cll = new CircularLL();
-      cll.createcll(1);
-      cll.insert(2);
-      cll.insert(3);
-      cll.insert(5);
-      cll.traverse();
-      cll.insert(0,0);
-      cll.insert(6,6);
-      cll.insert(4,4);
-      cll.traverse();
-      cll.search(5);
-      cll.search(7);
+      //CircularLL cll = new CircularLL();
+      //cll.createcll(1);
+      //cll.insert(2);
+      //cll.insert(3);
+      //cll.insert(5);
+      //cll.traverse();
+      //cll.insert(0,0);
+      //cll.insert(6,6);
+      //cll.insert(4,4);
+      //cll.traverse();
+      //cll.search(5);
+      //cll.search(7);
 
 
 
