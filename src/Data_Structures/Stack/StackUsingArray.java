@@ -18,4 +18,23 @@ public class StackUsingArray {
         else return false;
     }
 
+    public void push(int value){
+
+    }
+
+    public void pop(){
+
+    }
+
+    public void Top(){
+
+    }
+
+    public void DeleteStack(){
+
+    }
+
+
+
+
 }
