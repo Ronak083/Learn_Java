@@ -30,7 +30,7 @@ public class StackUsingLL {
         }
     }
     public void delete(){
-
+        ll.head = null;
     }
 
 }
