@@ -19,19 +19,37 @@ public class StackUsingArray {
     }
 
     public void push(int value){
-
+        if (isFull()){
+            System.out.println("Stack is Full");
+        } else{
+            arr[topOfStack+1]= value;
+            topOfStack++;
+            System.out.println("inserted Successfully");
+        }
     }
 
-    public void pop(){
-
+    public int pop(){
+        if (isEmpty()){
+            System.out.println("Stack is Empty");
+            return -1;
+        } else{
+            int top = arr[topOfStack];
+            topOfStack--;
+            System.out.println("Pop Successfully");
+            return top;
+        }
     }
 
-    public void Top(){
-
+    public int Top(){
+        if (isEmpty()){
+            System.out.println("Stack is Empty");
+            return -1;
+        } else return arr[topOfStack];
     }
 
     public void DeleteStack(){
-
+        arr = null;
+        System.out.println("Stack has been deleted successfully");
     }
 
 
