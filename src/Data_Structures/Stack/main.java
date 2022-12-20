@@ -18,6 +18,9 @@ public class main {
 
         StackUsingLL Stack = new StackUsingLL();
         Stack.push(5);
+        Stack.pop();
+        boolean result3 = Stack.isEmpty();
+        System.out.println("IsEmpty = " + result3);
     }
 
 }
