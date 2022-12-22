@@ -13,8 +13,8 @@ public class CircularQueue {
     }
     public void enqueue(int value){}
     public void dequeue(){}
-    public boolean isEmpty(){return false}
-    public boolean isFull(){return false}
+    public boolean isEmpty(){return false;}
+    public boolean isFull(){return false;}
     public int top(){
         return arr[start];
     }
