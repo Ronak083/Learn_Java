@@ -10,14 +10,25 @@ public class main {
         myqueue.enqueue(4);
         myqueue.enqueue(5);
         myqueue.enqueue(6);
-        boolean result = myqueue.isEmpty();
-        System.out.println(result);
-        result = myqueue.isFull();
-        System.out.println(result);
+
+        System.out.println(myqueue.isEmpty());
+        System.out.println(myqueue.isFull());
         myqueue.dequeue();
-        int nas = myqueue.top();
-        System.out.println(nas);
+        System.out.println(myqueue.top());
         myqueue.delete();
+
+        CircularQueue cq = new CircularQueue(4);
+        cq.enqueue(1);
+        cq.enqueue(2);
+        cq.enqueue(3);
+        cq.enqueue(4);
+        cq.enqueue(5);
+        System.out.println(cq.dequeue());
+        System.out.println(cq.top());
+        cq.delete();
+
+        QueueUsingLL lq = new QueueUsingLL(4);
+
 
 
     }

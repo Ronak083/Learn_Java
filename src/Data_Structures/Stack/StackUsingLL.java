@@ -1,5 +1,4 @@
 package Data_Structures.Stack;
-
 public class StackUsingLL {
     SinglyLinkedList ll;
     public StackUsingLL(){
