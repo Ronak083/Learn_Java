@@ -2,7 +2,7 @@ package Data_Structures.Recursion;
 public class fibo {
     public static void main(String[] args) {
         fibo recursion = new fibo();
-        var rec = recursion.fibonacci(10);
+        var rec = recursion.fibonacci(6);
         System.out.println(rec);
     }
     public int fibonacci(int n){
