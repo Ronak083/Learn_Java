@@ -1,4 +1,4 @@
-package Data_Structures.Stack;
+package Data_Structures.Queue;
 import Data_Structures.LinkedList.Node;
 
 public class SinglyLinkedList {
