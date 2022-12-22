@@ -54,5 +54,6 @@ public class QueueUsingArray {
     }
     public void delete(){
         arr = null;
+        System.out.println("Successfully Deleted Queue");
     }
 }
