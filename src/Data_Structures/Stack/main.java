@@ -21,6 +21,7 @@ public class main {
         Stack.pop();
         boolean result3 = Stack.isEmpty();
         System.out.println("IsEmpty = " + result3);
+        Stack.delete();
     }
 
 }
