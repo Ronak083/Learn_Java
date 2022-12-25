@@ -31,6 +31,7 @@ public class main {
 
         lq.enqueue(1);
         lq.enqueue(2);lq.enqueue(3);
+        lq.enqueue(4);
         lq.delQueue();
 
     }
