@@ -36,6 +36,8 @@ public class main {
 
         bt.root = n1;
         bt.preOrder(bt.root);
+        System.out.print("\n");
+        bt.inOrder(bt.root);
 
 
 
