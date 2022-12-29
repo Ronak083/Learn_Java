@@ -38,9 +38,12 @@ public class main {
         bt.preOrder(bt.root);
         System.out.print("\n");
         bt.inOrder(bt.root);
-
-
-
+        System.out.print("\n");
+        bt.postOrder(bt.root);
+        System.out.print("\n");
+        bt.levelOrder(bt.root);
+        System.out.print("\n");
+        bt.search("n5");
     }
 
 }
