@@ -40,9 +40,8 @@ public class main {
         bt.inOrder(bt.root);
         System.out.print("\n");
         bt.postOrder(bt.root);
-
-
-
+        System.out.print("\n");
+        bt.levelOrder(bt.root);
     }
 
 }
