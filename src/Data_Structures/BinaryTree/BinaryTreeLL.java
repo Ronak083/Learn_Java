@@ -1,4 +1,6 @@
 package Data_Structures.BinaryTree;
+import java.util.Queue;
+import java.util.LinkedList;
 
 public class BinaryTreeLL {
     BinaryNode root;
@@ -31,4 +33,24 @@ public class BinaryTreeLL {
         postOrder(node.right);
         System.out.print(node.value + " ");
     }
+    void levelOrder(BinaryNode node){
+        Queue<BinaryNode> queue = new LinkedList<BinaryNode>();
+        queue.add(root);
+
+        while(!queue.isEmpty()){
+            BinaryNode presentNode = queue.remove();
+            System.out.print(presentNode.value + " ");
+            if (presentNode.left != null){
+                queue.add(presentNode.left);
+
+            }
+            if (presentNode.right != null){
+                queue.add(presentNode.right  );
+
+            }
+
+        }
+
+    }
+
 }
