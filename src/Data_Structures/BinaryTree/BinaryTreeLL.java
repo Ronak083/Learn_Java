@@ -15,4 +15,12 @@ public class BinaryTreeLL {
         preOrder(node.right);
 
     }
+    void inOrder(BinaryNode node){
+        if (node == null){
+            return;
+        }
+        inOrder(node.left);
+        System.out.print(node.value + " ");
+        inOrder(node.right);
+    }
 }
