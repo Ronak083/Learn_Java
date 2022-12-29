@@ -42,6 +42,8 @@ public class main {
         bt.postOrder(bt.root);
         System.out.print("\n");
         bt.levelOrder(bt.root);
+        System.out.print("\n");
+        bt.search("n5");
     }
 
 }
