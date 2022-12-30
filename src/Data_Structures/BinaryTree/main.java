@@ -53,6 +53,12 @@ public class main {
         bt.insert("n6");
         bt.insert("n7");
         bt.insert("n8");
-        System.out.println(bt.getDeepestNode().value);
+        //System.out.println(bt.getDeepestNode().value);
+        bt.levelOrder(bt.root);
+        System.out.println();
+        bt.deleteNode("n3");
+
+        bt.levelOrder(bt.root);
+
     }
 }
