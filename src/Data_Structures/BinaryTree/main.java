@@ -24,7 +24,7 @@ public class main {
         //n8.value = "n8";
         //BinaryNode n9 = new BinaryNode();
         //n9.value = "n9";
-//
+        
         //n1.left = n2;
         //n1.right = n3;
         //n2.left = n4;
@@ -78,8 +78,12 @@ public class main {
 
         System.out.println();
         bta.search("4");
+        
+        System.out.println();
+        bta.delete("5");
 
-
+        System.out.println();
+        bta.DeleteBT();
 
     }
 }

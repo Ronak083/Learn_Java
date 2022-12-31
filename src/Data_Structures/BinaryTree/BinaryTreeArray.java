@@ -54,4 +54,24 @@ public class BinaryTreeArray {
         System.out.print("value not found");
         return -1;
     }
+
+    void delete(String value){
+        int location = search(value);
+        if (location == -1) return;
+        else {
+            arr[location] = arr[lastusedIndex];
+            lastusedIndex--;
+            System.out.println("The node successfully deleted ");
+        }
+    }
+    void DeleteBT(){
+        try{
+            arr=null;
+            System.out.println("Successfully Deleted Binary Tree");
+
+        } catch(Exception e){
+            System.out.println("Cann't Deleting Binary Tree");
+        }
+    }
+
 }
