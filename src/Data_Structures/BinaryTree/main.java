@@ -5,7 +5,7 @@ import Data_Structures.BinaryTree.BinaryTreeLL;
 
 public class main {
     public static void main(String[] args) {
-        BinaryTreeLL bt = new BinaryTreeLL();
+        //BinaryTreeLL bt = new BinaryTreeLL();
         //BinaryNode n1 = new BinaryNode();
         //n1.value = "n1";
         //BinaryNode n2 = new BinaryNode();
@@ -45,20 +45,25 @@ public class main {
         //System.out.print("\n");
         //bt.search("n5");
 
-        bt.insert("n1");
-        bt.insert("n2");
-        bt.insert("n3");
-        bt.insert("n4");
-        bt.insert("n5");
-        bt.insert("n6");
-        bt.insert("n7");
-        bt.insert("n8");
-        //System.out.println(bt.getDeepestNode().value);
-        bt.levelOrder(bt.root);
-        System.out.println();
-        bt.deleteNode("n3");
+        //bt.insert("n1");
+        //bt.insert("n2");
+        //bt.insert("n3");
+        //bt.insert("n4");
+        //bt.insert("n5");
+        //bt.insert("n6");
+        //bt.insert("n7");
+        //bt.insert("n8");
+        ////System.out.println(bt.getDeepestNode().value);
+        //bt.levelOrder(bt.root);
+        //System.out.println();
+        //bt.deleteNode("n3");
+        //bt.levelOrder(bt.root);
 
-        bt.levelOrder(bt.root);
+        BinaryTreeArray bta = new BinaryTreeArray(2);
+        bta.insert("1");
+        bta.insert("2");
+        bta.insert("3");
+
 
     }
 }
