@@ -54,6 +54,7 @@ public class BinaryTreeArray {
         System.out.print("value not found");
         return -1;
     }
+
     void delete(String value){
         int location = search(value);
         if (location == -1) return;
@@ -72,4 +73,5 @@ public class BinaryTreeArray {
             System.out.println("Cann't Deleting Binary Tree");
         }
     }
+
 }
