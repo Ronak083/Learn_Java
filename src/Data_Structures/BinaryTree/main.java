@@ -59,10 +59,26 @@ public class main {
         //bt.deleteNode("n3");
         //bt.levelOrder(bt.root);
 
-        BinaryTreeArray bta = new BinaryTreeArray(2);
+        BinaryTreeArray bta = new BinaryTreeArray(5);
         bta.insert("1");
         bta.insert("2");
         bta.insert("3");
+        bta.insert("4");
+        bta.insert("5");
+        bta.preorder(1);
+
+        System.out.println();
+        bta.Inorder(1);
+
+        System.out.println();
+        bta.postorder(1);
+
+        System.out.println();
+        bta.levelorder(1);
+
+        System.out.println();
+        bta.search("4");
+
 
 
     }
