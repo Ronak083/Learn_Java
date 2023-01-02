@@ -1,11 +1,11 @@
-package Data_Structures.BST;
+package Data_Structures.AVL;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class BinarySearchTree {
+public class AVLtree {
     BinaryNode root;
-    BinarySearchTree(){
+    AVLtree(){
         root = null;
     }
     private BinaryNode insert(BinaryNode node, int value){
@@ -26,7 +26,7 @@ public class BinarySearchTree {
         root = insert(root,value);
     }
     void preorder(BinaryNode node){
-        if (node==null) {return;}
+        if (node==null) return;
         System.out.print(node.value + " ");
         preorder(node.left);
         preorder(node.right);
@@ -73,39 +73,8 @@ public class BinarySearchTree {
             return Search(node.right, value);
         }
     }
-    public static BinaryNode minimumNode(BinaryNode root) {
-        if (root.left == null) {
-            return root;
-        } else {
-            return minimumNode(root.left);
-        }
-    }
-    /*public BinaryNode deleteNode(BinaryNode root, int value) {
-        if (root == null) {
-            System.out.println("Value not found in BST");
-            return null;
-        }
-        if (value < root.value) {
-            root.left = deleteNode(root.left, value);
-        } else if (value > root.value) {
-            root.right = deleteNode(root.right, value);
-        } else {
-            if (root.left != null && root.right != null) {
-                BinaryNode temp = root;
-                BinaryNode minNodeForRight = minimumNode(temp.right);
-                root.value = minNodeForRight.value;
-                root.right = deleteNode(root.right, minNodeForRight.value);
-            } else if (root.left != null) {
-                root = root.left;
-            } else if (root.right != null) {
-                root = root.right;
-            } else {
-                root = null;
-            }
-        }
-    }*/
 
-    public void deleteBST() {
+    public void deleteAVL() {
         root = null;
         System.out.println("BST has been deleted successfully");
     }
