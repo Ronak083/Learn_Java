@@ -20,7 +20,13 @@ public class main {
         bst.inorder(bst.root);
         System.out.println();
         bst.levelorder();
+
+        System.out.println();
         bst.Search(bst.root, 6);
+        //bst.deleteNode(bst.root, 6);
+
+        System.out.println();
+        bst.deleteBST();
 
     }
 }
