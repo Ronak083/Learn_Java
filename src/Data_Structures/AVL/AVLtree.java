@@ -73,6 +73,48 @@ public class AVLtree {
             return Search(node.right, value);
         }
     }
+    
+    public int getHeight(BinaryNode node){
+        if (node==null){
+            return 0;
+        }
+        return node.height;
+    }
+    private BinaryNode rotateright(BinaryNode disBlalancedNode){
+        BinaryNode newRoot = disBlalancedNode.left;
+        disBlalancedNode.left = disBlalancedNode.left.right;
+        newRoot .right = disBlalancedNode;
+        disBlalancedNode.height = 1 + Math.max(getHeight(disBlalancedNode.left), getHeight(disBlalancedNode.right));
+        newRoot.height = 1 + Math.max(getHeight(newRoot.left), getHeight(newRoot.right));
+        return newRoot;
+    }
+    private BinaryNode rotateleft(BinaryNode disBlalancedNode){
+        BinaryNode newRoot = disBlalancedNode.right;
+        disBlalancedNode.right = disBlalancedNode.right.left;
+        newRoot.left = disBlalancedNode;
+        disBlalancedNode.height = 1 + Math.max(getHeight(disBlalancedNode.left), getHeight(disBlalancedNode.right));
+        newRoot.height = 1 + Math.max(getHeight(newRoot.left), getHeight(newRoot.right));
+        return newRoot;
+    }
+    public int getBlalanced(BinaryNode node){
+        if (node==null){
+            return 0;
+        }
+        return getHeight(node.left) - getHeight(node.right);
+    }
+    
+    private BinaryNode insertNode(BinaryNode node, int nodeValue){
+        if (node == null){
+            BinaryNode newNode = new BinaryNode();
+            newNode.value = nodeValue;
+            newNode.height = 1;
+            return newNode;
+        } else if (nodeValue< node.value) {
+            
+        }
+    }
+    
+    
 
     public void deleteAVL() {
         root = null;
