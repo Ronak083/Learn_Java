@@ -22,9 +22,6 @@ public class AVLtree {
             return node;
         }
     }
-    void insert(int value){
-        root = insert(root,value);
-    }
     void preorder(BinaryNode node){
         if (node==null) return;
         System.out.print(node.value + " ");
@@ -102,7 +99,6 @@ public class AVLtree {
         }
         return getHeight(node.left) - getHeight(node.right);
     }
-    
     private BinaryNode insertNode(BinaryNode node, int nodeValue){
         if (node == null){
             BinaryNode newNode = new BinaryNode();
@@ -110,12 +106,35 @@ public class AVLtree {
             newNode.height = 1;
             return newNode;
         } else if (nodeValue< node.value) {
-            
+            node.left = insertNode(node.left, nodeValue);
+        } else{
+            node.right = insertNode(node.right , nodeValue);
         }
-    }
-    
-    
 
+        node.height = 1 + Math.max(getHeight(node.left) , getHeight(node.right));
+        int balance = getBlalanced(node);
+
+        if (balance > 1 && nodeValue < node.left.value){
+            return rotateright(node);
+        }
+
+        if(balance > 1 && nodeValue > node.left.value){
+            node.left = rotateleft(node.left);
+            return rotateright(node);
+        }
+
+        if(balance < -1 && nodeValue > node.right.value){
+            return rotateleft(node);
+        }
+        if(balance < -1 && nodeValue < node.right.value){
+            node.right = rotateleft(node.right);
+            return rotateleft(node);
+        }
+        return node;
+    }
+    public void insert(int value) {
+        root = insertNode(root, value);
+    }
     public void deleteAVL() {
         root = null;
         System.out.println("BST has been deleted successfully");
