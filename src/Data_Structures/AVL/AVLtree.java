@@ -1,8 +1,6 @@
 package Data_Structures.AVL;
-
 import java.util.LinkedList;
 import java.util.Queue;
-
 public class AVLtree {
     BinaryNode root;
     AVLtree(){
