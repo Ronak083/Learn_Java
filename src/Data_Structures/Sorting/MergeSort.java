@@ -22,9 +22,7 @@ public class MergeSort {
                 A[k] = rightTmpArray[j];
                 j++;
             }
-
         }
-
     }
     public static void mergeSort(int[] Array, int left, int right) {
         if (right > left) {
@@ -33,11 +31,5 @@ public class MergeSort {
             mergeSort(Array, m+1, right);
             merge(Array, left, m, right);
         }
-    }
-    public static void printArray(int[] arr){
-        for (int i = 0; i<arr.length;i++){
-            System.out.print(arr[i] + " ");
-        }
-        System.out.println();
     }
 }
