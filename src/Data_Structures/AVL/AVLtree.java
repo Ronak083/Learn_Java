@@ -93,7 +93,7 @@ public class AVLtree {
         newRoot.height = 1 + Math.max(getHeight(newRoot.left), getHeight(newRoot.right));
         return newRoot;
     }
-    public int getBlalanced(BinaryNode node){
+    public int getBalance(BinaryNode node){
         if (node==null){
             return 0;
         }
@@ -112,7 +112,7 @@ public class AVLtree {
         }
 
         node.height = 1 + Math.max(getHeight(node.left) , getHeight(node.right));
-        int balance = getBlalanced(node);
+        int balance = getBalance(node);
 
         if (balance > 1 && nodeValue < node.left.value){
             return rotateright(node);
@@ -134,6 +134,62 @@ public class AVLtree {
     }
     public void insert(int value) {
         root = insertNode(root, value);
+    }
+    public static BinaryNode minimum(BinaryNode root){
+        if (root.left == null){
+            return root;
+        }
+        return minimum(root.left);
+    }
+    public BinaryNode deleteNode(BinaryNode node, int value) {
+        if (node == null) {
+            System.out.println("Value not found in AVL");
+            return node;
+        }
+        if (value < node.value) {
+            node.left = deleteNode(node.left, value);
+        } else if (value > node.value) {
+            node.right = deleteNode(node.right, value);
+        } else {
+            if (node.left != null && node.right != null) {
+                BinaryNode temp = node;
+                BinaryNode minNodeForRight = minimum(temp.right);
+                node.value = minNodeForRight.value;
+                node.right = deleteNode(node.right, minNodeForRight.value);
+            } else if (node.left != null) {
+                node = node.left;
+            } else if (node.right != null) {
+                node = node.right;
+            } else {
+                node = null;
+            }
+        }
+        // Case 2 - rotation required
+
+        // System.out.println("1");
+        // System.out.println(previous.value);
+
+        // node.height = 1 + Math.max(getHeight(node.left), getHeight(node.right));
+        int balance = getBalance(node);
+
+        if (balance > 1 && getBalance(node.left) >= 0) {
+            return rotateright(node);
+        }
+        if (balance > 1 && getBalance(node.left) < 0) {
+            node.left = rotateleft(node.left);
+            return rotateright(node);
+        }
+        if (balance < -1 && getBalance(node.right) <= 0) {
+            return rotateleft(node);
+        }
+        if (balance < -1 && getBalance(node.right) > 0) {
+            node.right = rotateright(node.right);
+            return rotateleft(node);
+        }
+        return node;
+    }
+    public void delete(int value) {
+        root = deleteNode(root, value);
     }
     public void deleteAVL() {
         root = null;
