@@ -14,5 +14,11 @@ public class main {
 
         BubbleSort.bubbleSort(arr);
         printArray(arr);
+
+        InsertionSort.InsertionSort(arr);
+        printArray(arr);
+
+        SelectionSort.selectionSort(arr);
+        printArray(arr);
     }
 }
